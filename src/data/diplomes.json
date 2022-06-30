@@ -1,0 +1,20 @@
+[
+  {
+    "nom ecole": "Ecole du zero",
+    "diplome": "Developpeur web",
+    "reception date": "2020",
+    "resultat": "15"
+  },
+  {
+    "nom ecole": "Ecole du zero",
+    "diplome": "Developpeur Symfony",
+    "reception date": "2021",
+    "resultat": "13"
+  },
+  {
+    "nom ecole": "Ecole du zero",
+    "diplome": "Dev Ops",
+    "reception date": "2022",
+    "resultat": "14"
+  }
+]

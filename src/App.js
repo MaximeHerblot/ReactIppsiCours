@@ -1,10 +1,11 @@
-import Nav from "./route/Routeur";
+import Routeur from './route/Routeur'
+
 function App() {
-  return (
-    <div className="App">
-      <Nav></Nav>
-    </div>
-  );
+    return (
+        <>
+            <Routeur />
+        </>
+    )
 }
 
-export default App;
+export default App

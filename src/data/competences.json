@@ -1,0 +1,22 @@
+[
+  {
+    "nom competence": "PHP",
+    "niveau": 4
+  },
+  {
+    "nom competence": "Symfony",
+    "niveau": 3
+  },
+  {
+    "nom competence": "HTML",
+    "niveau": 4
+  },
+  {
+    "nom competence": "CSS",
+    "niveau": 3
+  },
+  {
+    "nom competence": "JavaScript",
+    "niveau": 3
+  }
+]

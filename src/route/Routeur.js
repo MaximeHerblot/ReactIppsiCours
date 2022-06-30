@@ -1,81 +1,39 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useLocation,
-} from "react-router-dom";
+import React, { lazy, Suspense } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-export default function Nav() {
-  return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/projet">projet</Link>
-            </li>
-            <li>
-              <Link to="/cv">cv</Link>
-            </li>
-            <li>
-              <Link to="/contact">contact</Link>
-            </li>
-          </ul>
-        </nav>
+// Css
+import '../css/style.css'
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/cv">
-            <Cv />
-          </Route>
-          <Route path="/projet">
-            <Projet />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="*">
-            <NoMatch />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
-}
+// Loader
+import ThreeDots from '../components/loader/threedots'
 
-function Home() {
-  return <h2>Home</h2>;
-}
-function Projet() {
-  return <h2>Projet</h2>;
-}
+// Layout
+import LayoutNav from '../layout/navbar/layoutNav'
 
-function Cv() {
-  return <h2>Cv</h2>;
-}
+// 404
+import NotFound from './NotFound'
 
-function Contact() {
-  return <h2>Contact</h2>;
-}
+// Pages
+const Main = lazy(() => import('../pages/main'))
+const Contact = lazy(() => import('../pages/contact'))
+const Cv = lazy(() => import('../pages/cv'))
+const Projets = lazy(() => import('../pages/projets'))
 
-function NoMatch() {
-  let location = useLocation();
+const Routeur = () => (
+    <Suspense fallback={<ThreeDots />}>
+        {/* <Suspense fallback={<p>Chargement ...</p>}> */}
+        <Router>
+            <LayoutNav>
+                <Switch>
+                    <Route exact path="/" component={Main} />
+                    <Route exact path="/contact" component={Contact} />
+                    <Route exact path="/cv" component={Cv} />
+                    <Route exact path="/projets" component={Projets} />
+                    <Route path="*" component={NotFound} />
+                </Switch>
+            </LayoutNav>
+        </Router>
+    </Suspense>
+)
 
-  return (
-    <div>
-      <h3>
-        No match for <code>{location.pathname}</code>
-      </h3>
-      <Link to="/">Go to home</Link>
-    </div>
-  );
-}
+export default Routeur

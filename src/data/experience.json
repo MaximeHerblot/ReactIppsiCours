@@ -1,0 +1,32 @@
+[
+  {
+    "nom du poste": "Développeur Full Stack",
+    "type emploi": "Stage",
+    "nom entreprise": "Novadys",
+    "lieu": "Chalons en Champagne",
+    "date de debut": "Mars 2020",
+    "date de fin": "Juin 2020",
+    "secteur": "Bureautique",
+    "descriptif": "Poste de développeur web Full Stack, avec comme stack technique HTML/CSS PHP/Symfony 4."
+  },
+  {
+    "nom du poste": "Développeur Full Stack",
+    "type emploi": "CDI",
+    "nom entreprise": "Cocooncenter",
+    "lieu": "Chalons en Champagne",
+    "date de debut": "Mai 2021",
+    "date de fin": "Septembre 2021",
+    "secteur": "Pharmacie",
+    "descriptif": "Poste de développeur web Full Stack, avec comme stack technique HTML/CSS PHP (5.6). Développement de nouvelle application ainsi que la maintenance d'ancienne application."
+  },
+  {
+    "nom du poste": "Développeur Full Stack",
+    "type emploi": "Alternance",
+    "nom entreprise": "AllSetFor",
+    "lieu": "Paris",
+    "date de debut": "Mars 2022",
+    "date de fin": "-",
+    "secteur": "Ressource humaine",
+    "descriptif": "Poste de développeur web Full Stack, avec comme stack technique HTML/CSS PHP (7.1)/ Symfony (3.4). Développement de nouvelle application ainsi que la maintenance d'ancienne application. "
+  }
+]

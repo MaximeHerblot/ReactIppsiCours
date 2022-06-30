@@ -1,0 +1,5 @@
+[
+  { "type activite": "Tennis", "niveau": "3", "frequency": "Semaine" },
+  { "type activite": "Course a pieds", "niveau": "1", "frequency": "Jour" },
+  { "type activite": "JDR", "niveau": "3", "frequency": "Semaine" }
+]

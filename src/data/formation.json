@@ -1,0 +1,26 @@
+[
+  {
+    "name": "BAC S",
+    "ecole": "Lycée Stéphane Hessel",
+    "domaine": "Science",
+    "date de debut": 2016,
+    "date de fin": 2018,
+    "resultat": "11.5"
+  },
+  {
+    "name": "DUT Informatique",
+    "ecole": "IUT Reims",
+    "domaine": "Informatique",
+    "date de debut": 2018,
+    "date de fin": 2020,
+    "resultat": "11"
+  },
+  {
+    "name": "Bachelor Informatique",
+    "ecole": "IPSSI Paris",
+    "domaine": "Informatique",
+    "date de debut": 2022,
+    "date de fin": 2023,
+    "resultat": "Non connu"
+  }
+]
